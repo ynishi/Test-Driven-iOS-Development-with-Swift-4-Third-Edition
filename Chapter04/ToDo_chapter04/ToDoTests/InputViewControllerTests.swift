@@ -46,8 +46,8 @@ class InputViewControllerTests: XCTestCase {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "MM/dd/yyyy"
     
-    
-    let timestamp = 1456095600.0
+    let dateTmp = dateFormatter.date(from: "08/27/2017")
+    let timestamp = dateTmp!.timeIntervalSince1970
     let date = Date(timeIntervalSince1970: timestamp)
     
     
