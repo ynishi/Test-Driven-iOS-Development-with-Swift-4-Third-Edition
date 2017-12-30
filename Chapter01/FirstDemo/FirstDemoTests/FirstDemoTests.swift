@@ -47,7 +47,7 @@ class FirstDemoTests: XCTestCase {
   
   func test_MakeHeadline_ReturnsStringWithEachWordStartCapital2() {
     let input           = "Here is another Example"
-    let expectedOutput  = "Here iS Another Example"
+    let expectedOutput  = "Here Is Another Example"
     
     
     let headline = viewController.makeHeadline(from: input)
